@@ -1,30 +1,28 @@
-# CDW R Programming with Excel
+
+# CDW Master Class - R Programming with Excel
+
+## Description
+**Bridging R Programming with Excel: The Future of Data Modeling** - This master class is designed to showcase the powerful combination of R programming with Excel for data analysis and modeling. Participants will learn how to leverage the statistical capabilities of R alongside the familiar interface of Excel, enabling them to create enhanced, dynamic, and robust data models.
+
+## Structure
+- **R Scripts Folder**: Contains all the R scripts that demonstrate various functionalities of R programming in conjunction with Excel.
+- **Data Folder**: Includes CSV files used in the R scripts for practical demonstrations. These files represent typical datasets that one might encounter in a business environment.
+- **Doc Folder**: Contains a PowerPoint presentation detailing the concepts covered in the master class, along with any additional documentation that supports the learning process.
 
 ## Working with R
-Great free online courses to gain familiarity with R.
-[DataQuest](https://www.dataquest.io/) or [DataCamp](https://www.datacamp.com). The code below should be run in the console to install packages needed.
+For those new to R or seeking to enhance their skills, we recommend engaging with free online courses offered by platforms like [DataQuest](https://www.dataquest.io/) or [DataCamp](https://www.datacamp.com). 
 
-## Please install the following packages with this R code.
-If you encounter any errors don't worry we will find time to work through them.  The `qdap` library is usually the trickiest because it requires Java and `rJava` and does not work on Mac.  So if you get any errors, try removing that from the code below and rerunning.  This will take **a long time** if you don't already have the packages, so please run prior to class, and at a time you don't need your computer ie *at night*.
+### Initial Setup
+Before diving into the scripts, ensure you have the necessary packages installed. Run the following commands in your R console:
+
+```R
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("readxl")
+install.packages("writexl")
 ```
-# Individually you can use 
-# install.packages('packageName') such as below:
-install.packages('ggplot2')
 
-# or 
-install.packages('pacman')
-pacman::p_load(ggplot2, ggthemes, ggdark, rbokeh, maps, 
-               ggmap, leaflet, radiant.data, DataExplorer,
-               vtreat, dplyr, ModelMetrics, pROC,
-               MLmetrics, caret, e1071, plyr, 
-               rpart.plot, randomForest, forecast, dygraphs,
-               lubridate, jsonlite, tseries, ggseas,
-               arules,fst, recommenderlab,reshape2,
-               TTR,quantmod, htmltools,
-               PerformanceAnalytics,rpart, data.table,
-               pbapply, rbokeh, stringi, tm, qdap, readr,
-               dendextend, wordcloud, RColorBrewer,
-               tidytext, radarchart, RCurl, openNLP, xml2, stringr,
-               devtools, flexdashboard, rmarkdown, httr)
+These packages are essential for data manipulation, visualization, and interacting with Excel files.
 
-```
+## Conclusion
+The CDW Master Class is a comprehensive introduction to integrating R programming with Excel. By the end of the session, participants will have a solid foundation in using these tools for advanced data analysis and modeling.
