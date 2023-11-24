@@ -1,4 +1,3 @@
-
 # CDW Master Class - R Programming with Excel
 
 ## Description
@@ -13,6 +12,10 @@
 For those new to R or seeking to enhance their skills, we recommend engaging with free online courses offered by platforms like [DataQuest](https://www.dataquest.io/) or [DataCamp](https://www.datacamp.com). 
 
 ### Initial Setup
+[Download R](https://cran.r-project.org/) - Precompiled binary distributions of the base system and contributed packages, Windows and Mac users most likely want one of these versions of R
+
+Download and install [R Studio](https://posit.co/downloads/) Desktop Open Source Edition.
+
 Before diving into the scripts, ensure you have the necessary packages installed. Run the following commands in your R console:
 
 ```R
