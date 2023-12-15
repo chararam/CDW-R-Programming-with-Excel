@@ -14,6 +14,7 @@ print(my_vector)
 sum_result <- sum(my_vector)
 print("Sum of the vector elements:")
 print(sum_result)
+cat("Sum of the vector elements:", sum_result, "\n")
 
 # Part 2: Reading Data from a CSV File
 
@@ -23,7 +24,7 @@ install.packages("readxl")
 library(readxl)
 
 # Reading data from a CSV file - make sure to replace the path with the path to your actual CSV file
-data_from_csv <- read.csv("/Users/chararam/Documents/GitHub/CDW-R-Programming-with-Excel/data/Customer_Data.csv")
+data_from_csv <- read.csv("https://raw.githubusercontent.com/netdevmike/CDW-R-Programming-with-Excel/main/data/Customer_Data.csv?token=GHSAT0AAAAAACD2NM5HJUAQUG7JJJ7FN7AKZL2SGNA")
 print("Data read from CSV file:")
 print(data_from_csv)
 
