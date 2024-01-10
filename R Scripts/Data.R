@@ -1,5 +1,8 @@
 # Advanced Introduction to R Programming with Excel Integration
 
+# Set your working Directory
+setwd('/Users/chararam/Documents/GitHub/CDW-R-Programming-with-Excel')
+
 # Part 1: Setting Up
 
 # Install and load necessary packages
@@ -16,8 +19,8 @@ library(ggplot2)
 
 # Reading CSV files - replace with the paths to your actual CSV files
 # 'read.csv' is a function in R's base package for reading CSV files into data frames.
-sales_data <- read.csv("/Users/chararam/Documents/GitHub/CDW-R-Programming-with-Excel/data/Customer_Data.csv")
-customer_data <- read.csv("/Users/chararam/Documents/GitHub/CDW-R-Programming-with-Excel/data/Sales_Data.csv")
+sales_data <- read.csv("https://raw.githubusercontent.com/netdevmike/CDW-R-Programming-with-Excel/main/data/Sales_Data.csv")
+customer_data <- read.csv("https://raw.githubusercontent.com/netdevmike/CDW-R-Programming-with-Excel/main/data/Customer_Data.csv")
 
 # Print the data to understand its structure
 print(sales_data)
@@ -33,7 +36,7 @@ print(combined_data)
 
 # Analysis 1: Sales Distribution by Age Group
 # The 'cut' function is used to divide the age data into discrete intervals or bins.
-combined_data$AgeGroup <- cut(combined_data$Age, breaks=c(20,30,40,50), labels=c("20s", "30s", "40s"))
+AgeGroup <- cut(combined_data$Age, breaks=c(20,30,40,50), labels=c("20s", "30s", "40s"))
 
 # The 'aggregate' function is used to summarize the sales data by these age groups.
 sales_by_age_group <- aggregate(Sales ~ AgeGroup, data = combined_data, sum)
@@ -52,7 +55,7 @@ ggplot(sales_by_age_group, aes(x = AgeGroup, y = Sales)) +
   labs(title = "Sales Distribution by Age Group", x = "Age Group", y = "Sales")
 
 # Analysis 2: Average Sales per Month
-# Again, using 'aggregate' to calculate the average sales for each month.
+# Using 'aggregate' to calculate the average sales for each month.
 avg_sales_per_month <- aggregate(Sales ~ Month, data = combined_data, mean)
 print("Average Sales per Month:")
 print(avg_sales_per_month)

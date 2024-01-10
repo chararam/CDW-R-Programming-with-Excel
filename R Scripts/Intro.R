@@ -1,5 +1,8 @@
 # Introduction to R Programming with Excel Integration
 
+# Set you working Directory so you know where outputs will be saved
+setwd('/Users/chararam/Documents/GitHub/CDW-R-Programming-with-Excel')
+
 # Part 1: Basic R Concepts
 
 # Print a message to the console
@@ -31,7 +34,7 @@ print(data_from_csv)
 # Part 3: Data Manipulation
 
 # Performing simple data manipulation - calculating the mean (average) of a numeric column
-# Replace 'CustomerID' with the name of the column you want to calculate the mean for
+# “$” symbol is known as the extractor operator. It is primarily used to access components of a data structure or object.
 mean_value <- mean(data_from_csv$CustomerID, na.rm = TRUE)  # 'na.rm = TRUE' ensures that missing values are ignored [NA remove]
 print("Mean of the selected column:")
 print(mean_value)
@@ -53,6 +56,7 @@ print("Data written to Excel file successfully.")
 plot(data_from_csv$CustomerID, type = "l", col = "blue",
      main = "Simple Line Graph", xlab = "Index", ylab = "Values")
 print("Line graph plotted successfully.")
+
 
 # Conclusion
 print("End of introduction to R programming with Excel integration.")
