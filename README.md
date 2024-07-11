@@ -9,7 +9,7 @@
 - **Doc Folder**: Contains a PowerPoint presentation detailing the concepts covered in the master class, along with any additional documentation that supports the learning process.
 
 ## Working with R
-For those new to R or seeking to enhance their skills, we recommend engaging with free online courses offered by platforms like [DataQuest](https://www.dataquest.io/) or [DataCamp](https://www.datacamp.com). 
+For those new to R or seeking to enhance their skills, I recommend engaging with free online courses offered by platforms like [DataQuest](https://www.dataquest.io/) or [DataCamp](https://www.datacamp.com). 
 
 ### Initial Setup
 [Download R](https://cran.r-project.org/) - Precompiled binary distributions of the base system and contributed packages, Windows and Mac users most likely want one of these versions of R
